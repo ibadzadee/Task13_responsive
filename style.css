@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    background-color: yellow;
+    padding: 5px 10px;
+    justify-content: space-between;
+}
+
+.left {
+    width: 34%;
+    /* height: 200px; */
+    /* border: 2px solid black; */
+}
+
+.right{
+    width: 64%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.education{
+    width: 100%;
+    height: 500px;
+    background-color: red;
+}
+
+.experience{
+    width: 100%;
+    height: 500px;
+    background-color: cyan;
+}
+
+.photo{
+    width: 100%;
+    height: 300px;
+    background-color: red;
+    position: relative;
+    background-image: url(https://www.shutterstock.com/image-photo/young-smiling-cheerful-woman-holding-260nw-259773821.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+.photo h1{
+    position:absolute;
+    bottom: 20px;
+}
+
+.info{
+    width: 100%;
+    height: 700px;
+    background-color: aqua;
+}
+
+.info .top{
+    width: 30%;
+    background-color: cyan;
+    display: flex;
+    justify-content: space-evenly ;
+    padding-top: 15px;
+}
+
+.orta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+.percent{
+    width: 90%;
+    height: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px ;
+}
+
+.percent div{
+    width: 80%;
+    height: 20px;
+    background-color: blue;
+    border: 1px solid black;
+    border-radius: 10px ;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .container .left{
+        width: 100%;
+    }
+
+    .container .right {
+        width: 100%;
+    }
+}
